@@ -43,7 +43,7 @@ client.on(Events.MessageCreate, (message) => {
 
 // DO NOT DELETE:
 const superSecretToken =
-  'MTMyODM5OTQwOTU2OTk5MjgwOA.GLXAZZ.-9B_pYgz1NeKFd1z4rk0ttk49MVkXnQGyp3JZ0';
+  '';
 client
   .login(superSecretToken)
   .catch((reason) => console.log('we got rejected because', reason));
