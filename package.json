@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "discord.js": "^14.17.3"
+  },
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "start": "bun run index.ts"
+  }
+}
