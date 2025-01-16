@@ -41,9 +41,7 @@ client.on(Events.MessageCreate, (message) => {
   }
 });
 
-// DO NOT DELETE:
-const superSecretToken =
-  '';
-client
-  .login(superSecretToken)
-  .catch((reason) => console.log('we got rejected because', reason));
+const TOKEN = process.env.BOT_TOKEN;
+if (!TOKEN) throw new Error("We don't have a token mayday mayday mayday");
+
+client.login(TOKEN).catch((reason) => console.log('we got rejected because', reason));
